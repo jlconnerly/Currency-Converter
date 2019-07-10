@@ -12,6 +12,7 @@
 		32A8A1E422D67A86001D2D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A8A1E222D67A86001D2D37 /* Main.storyboard */; };
 		32A8A1E622D67A87001D2D37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A8A1E522D67A87001D2D37 /* Assets.xcassets */; };
 		32A8A1E922D67A87001D2D37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A8A1E722D67A87001D2D37 /* LaunchScreen.storyboard */; };
+		32A8A20522D69DE6001D2D37 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A8A20422D69DE6001D2D37 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		32A8A1E522D67A87001D2D37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32A8A1E822D67A87001D2D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32A8A1EA22D67A87001D2D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A8A20422D69DE6001D2D37 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				32A8A1DE22D67A86001D2D37 /* AppDelegate.swift */,
 				32A8A1E022D67A86001D2D37 /* ViewController.swift */,
+				32A8A20422D69DE6001D2D37 /* CustomButton.swift */,
 				32A8A1E222D67A86001D2D37 /* Main.storyboard */,
 				32A8A1E522D67A87001D2D37 /* Assets.xcassets */,
 				32A8A1E722D67A87001D2D37 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				32A8A1E122D67A86001D2D37 /* ViewController.swift in Sources */,
 				32A8A1DF22D67A86001D2D37 /* AppDelegate.swift in Sources */,
+				32A8A20522D69DE6001D2D37 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

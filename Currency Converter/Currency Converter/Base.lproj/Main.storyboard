@@ -52,7 +52,7 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxC-Ht-4wB">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxC-Ht-4wB" customClass="CustomButton" customModule="Currency_Converter" customModuleProvider="target">
                                 <rect key="frame" x="180" y="164" width="55" height="30"/>
                                 <state key="normal" title="Convert"/>
                                 <connections>
@@ -91,6 +91,7 @@
                         <outlet property="CADPesoLabel" destination="32u-bE-djK" id="BBc-Nu-QbJ"/>
                         <outlet property="CADPesoSegmentedControl" destination="V3M-EN-i0w" id="GU5-hJ-80U"/>
                         <outlet property="CADPesoTextField" destination="Nsi-vy-fij" id="TSt-hM-oTC"/>
+                        <outlet property="CovertButton" destination="bxC-Ht-4wB" id="cal-7U-W1p"/>
                         <outlet property="USCurrencyTextField" destination="YWV-IT-uHP" id="ZvW-wk-wG5"/>
                     </connections>
                 </viewController>

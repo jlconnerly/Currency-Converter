@@ -18,10 +18,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var CADPesoTextField: UITextField!
     @IBOutlet weak var CADPesoLabel: UILabel!
     @IBOutlet weak var CADPesoSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var CovertButton: CustomButton!
     
     let CADDiff: Double = 1.31
     let pesoDiff: Double = 19.17
-    let currencyUpdate = "$0.00"
+    
     
     //
     // MARK View LifeCycle
@@ -37,19 +38,16 @@ class ViewController: UIViewController {
     //
     
     @IBAction func convertButtonTapped(_ sender: UIButton) {
-        guard let userEntry = USCurrencyTextField.text else { return }
-        CADPesoTextField.text = String(currencyConversion(userInput: userEntry))
+        updateViews()
     }
     
     @IBAction func CADPesoSCValueChange(_ sender: Any) {
         if CADPesoSegmentedControl.selectedSegmentIndex == 0 {
             CADPesoLabel.text = "Currency (CAD)"
-            guard let userEntry = USCurrencyTextField.text else { return }
-            CADPesoTextField.text = String(currencyConversion(userInput: userEntry))
+            updateViews()
         }else {
             CADPesoLabel.text = "Currency (MXN)"
-            guard let userEntry = USCurrencyTextField.text else { return }
-            CADPesoTextField.text = String(currencyConversion(userInput: userEntry))
+            updateViews()
         }
     }
     
@@ -74,6 +72,11 @@ class ViewController: UIViewController {
         return formatter.string(from: currencyConversion) ?? "$0.00"
     }
     
+    func updateViews() {
+        guard let userEntry   = USCurrencyTextField.text else { return }
+        let cleanUserEntry    = userEntry.replacingOccurrences(of: "$", with: "")
+        CADPesoTextField.text = String(currencyConversion(userInput: cleanUserEntry))
+    }
     
 }
 
